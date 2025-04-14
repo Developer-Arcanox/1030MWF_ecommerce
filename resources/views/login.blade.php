@@ -51,6 +51,9 @@
 
         <!-- Right Side - Login Form -->
         <div class="login-right">
+            @if(session("success"))
+            {{session("success")}}
+            @endif
             <div class="login-form-container">
                 <div class="logo">ModernShop</div>
                 <h2 class="login-title">Sign in to your account</h2>

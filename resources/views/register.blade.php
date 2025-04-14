@@ -62,19 +62,20 @@
                 <div class="logo">ModernShop</div>
                 <h2 class="register-title">Create Your Account</h2>
 
-                <form id="registrationForm">
+                <form id="registrationForm" action="{{ route('register') }}" method="post">
+                    @csrf
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="firstName" class="form-label">First Name</label>
-                                <input type="text" class="form-control" id="firstName" placeholder="Enter your first name" required>
+                                <input type="text" class="form-control" name="first_name" id="firstName" placeholder="Enter your first name" required>
                                 <div class="invalid-feedback">Please enter your first name</div>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="lastName" class="form-label">Last Name</label>
-                                <input type="text" class="form-control" id="lastName" placeholder="Enter your last name" required>
+                                <input type="text" class="form-control" name="last_name" id="lastName" placeholder="Enter your last name" required>
                                 <div class="invalid-feedback">Please enter your last name</div>
                             </div>
                         </div>
@@ -82,14 +83,14 @@
 
                     <div class="form-group">
                         <label for="email" class="form-label">Email Address</label>
-                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email" required>
                         <div class="invalid-feedback">Please enter a valid email address</div>
                     </div>
 
                     <div class="form-group">
                         <label for="password" class="form-label">Password</label>
                         <div class="password-input-group">
-                            <input type="password" class="form-control" id="password" placeholder="Create a password" required>
+                            <input type="password" class="form-control" name="password" id="password" placeholder="Create a password" required>
                             <span class="password-toggle" id="togglePassword">
                                 <i class="far fa-eye"></i>
                             </span>
@@ -119,7 +120,7 @@
 
                     <div class="form-group">
                         <label for="phone" class="form-label">Phone Number (Optional)</label>
-                        <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+                        <input type="tel" class="form-control" name="phone" id="phone" placeholder="Enter your phone number">
                         <small class="text-muted">For order updates and delivery notifications</small>
                     </div>
 
@@ -138,7 +139,7 @@
                         </label>
                     </div>
 
-                    <button type="submit" class="btn btn-register mb-3">Create Account</button>
+                    <button type="submit" id="registerSubmitBtn" class="btn btn-register mb-3">Create Account</button>
 
                     <div class="divider">or sign up with</div>
 
