@@ -1,0 +1,133 @@
+:root {
+    --primary-color: #6c5ce7;
+    --secondary-color: #a29bfe;
+    --dark-color: #2d3436;
+    --light-color: #f5f6fa;
+    --accent-color: #fd79a8;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+}
+
+.hero-section {
+    padding: 3rem 0;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.carousel-item {
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+    bottom: 100px;
+}
+
+.category-card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.category-card:hover {
+    transform: translateY(-10px);
+}
+
+.category-img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.product-img {
+    height: 220px;
+    object-fit: cover;
+}
+
+.badge-discount {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: var(--accent-color);
+}
+
+.newsletter-section {
+    background-color: var(--dark-color);
+    color: white;
+    padding: 4rem 0;
+}
+
+.footer {
+    background-color: var(--dark-color);
+    color: white;
+    padding: 3rem 0;
+}
+
+.footer-links a {
+    color: #b2bec3;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+.social-icon {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    color: #b2bec3;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: white;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #5649d1;
+    border-color: #5649d1;
+}
+
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
